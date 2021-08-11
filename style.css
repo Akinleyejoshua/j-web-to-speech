@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    background: whitesmoke;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15),
+    -2px -1px 5px white;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header * {
+    align-self: center;
+}
+
+.nav-brand{
+    padding: 1rem;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.05),
+    -5px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+
+nav a{
+    padding: .5rem 1rem;
+    margin: 0 .5rem;
+    color: rgba(0, 0, 0, 0.596);
+    background: white;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.05),
+    -5px -2px 5px rgba(255, 255, 255, 0.5);
+    border-radius: .2rem;
+}
+
+nav a:hover, nav button:hover, .nav-brand:hover{
+    box-shadow: inset 5px 2px 5px rgba(0, 0, 0, 0.08),
+    inset -5px -2px 5px rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+nav button{
+    border: none;
+    padding: 1rem 3rem;
+    background: white;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.05),
+    -5px -2px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+}
+
+@media (max-width: 640px){
+    nav {
+        flex-direction: column; 
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a{
+        margin: 1rem;
+    }
+
+    header{
+        border-radius: 2rem;
+    }
+
+}
